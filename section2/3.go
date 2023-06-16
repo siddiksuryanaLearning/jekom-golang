@@ -1,0 +1,1 @@
+Instalasi Go versi 18.1
