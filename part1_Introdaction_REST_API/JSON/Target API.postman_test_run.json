@@ -1,0 +1,326 @@
+{
+	"id": "ad065993-0dc9-40e3-8402-afbdc504bec6",
+	"name": "Target API",
+	"timestamp": "2023-06-26T06:31:36.263Z",
+	"collection_id": "0-705d4980-f9fd-4604-970c-f4b499edbfca",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7b2c5289-b3e8-47a0-bb92-5170a8230a09",
+			"name": "Request 2",
+			"url": "https://newsapi.org/v2/everything?q=apple&from=2023-06-25&to=2023-06-25&sortBy=popularity&apiKey=8a151d2cd7f94015b50b26f198fe1055",
+			"time": 2228,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2228
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "53ee9929-001d-4373-a212-6ec4ddff773b",
+			"name": "Request 3",
+			"url": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8a151d2cd7f94015b50b26f198fe1055",
+			"time": 367,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				367
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3f818072-1d8b-44da-9f40-9a304d84704d",
+			"name": "Request 4",
+			"url": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8a151d2cd7f94015b50b26f198fe1055",
+			"time": 370,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				370
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "81f6d437-8657-4d21-8961-3154c63a3812",
+			"name": "Request 5",
+			"url": "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=8a151d2cd7f94015b50b26f198fe1055",
+			"time": 606,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				606
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "686cfee3-e1bf-4830-995d-51cc904753f4",
+			"name": "Request 1",
+			"url": "https://newsapi.org/v2/everything?q=tesla&from=2023-05-26&sortBy=publishedAt&apiKey=8a151d2cd7f94015b50b26f198fe1055",
+			"time": 1052,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1052
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "13e3b71e-242c-4252-8342-d5ae483738da",
+			"name": "Request 1",
+			"url": "https://swapi.dev/api/people",
+			"time": 9624,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9624
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "89d77f9c-4e8a-4584-b649-3a7a98b5601c",
+			"name": "Request 2",
+			"url": "https://swapi.dev/api/planets",
+			"time": 8442,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8442
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "faca65b1-87ce-4882-965e-862236c66cb4",
+			"name": "Request 3",
+			"url": "https://swapi.dev/api/vehicles",
+			"time": 11822,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11822
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f78f5c91-3500-4511-acf5-569bb3b4fa60",
+			"name": "Request 4",
+			"url": "https://swapi.dev/api/films",
+			"time": 32597,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				32597
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "86d9d20d-95ac-4ca4-8cfa-25280bf6b8e8",
+			"name": "Request 5",
+			"url": "https://swapi.dev/api/species",
+			"time": 8474,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8474
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fc763612-dd34-4cff-bf48-4b555560eb80",
+			"name": "GET",
+			"url": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/user/1",
+			"time": 1504,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1504
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bf9b2176-df87-4b81-86af-02e0fdad0c86",
+			"name": "DELETE",
+			"url": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/user/1",
+			"time": 401,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				401
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2376ec5e-f606-4b70-9648-7612b4767218",
+			"name": "PUT",
+			"url": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/user/1",
+			"time": 311,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				311
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ea2d18f1-7573-4b2e-8c5b-acbc873958a2",
+			"name": "POST",
+			"url": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/user",
+			"time": 306,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				306
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 78104,
+	"collection": {
+		"requests": [
+			{
+				"id": "7b2c5289-b3e8-47a0-bb92-5170a8230a09",
+				"method": "GET"
+			},
+			{
+				"id": "53ee9929-001d-4373-a212-6ec4ddff773b",
+				"method": "GET"
+			},
+			{
+				"id": "3f818072-1d8b-44da-9f40-9a304d84704d",
+				"method": "GET"
+			},
+			{
+				"id": "81f6d437-8657-4d21-8961-3154c63a3812",
+				"method": "GET"
+			},
+			{
+				"id": "686cfee3-e1bf-4830-995d-51cc904753f4",
+				"method": "GET"
+			},
+			{
+				"id": "13e3b71e-242c-4252-8342-d5ae483738da",
+				"method": "GET"
+			},
+			{
+				"id": "89d77f9c-4e8a-4584-b649-3a7a98b5601c",
+				"method": "GET"
+			},
+			{
+				"id": "faca65b1-87ce-4882-965e-862236c66cb4",
+				"method": "GET"
+			},
+			{
+				"id": "f78f5c91-3500-4511-acf5-569bb3b4fa60",
+				"method": "GET"
+			},
+			{
+				"id": "86d9d20d-95ac-4ca4-8cfa-25280bf6b8e8",
+				"method": "GET"
+			},
+			{
+				"id": "fc763612-dd34-4cff-bf48-4b555560eb80",
+				"method": "GET"
+			},
+			{
+				"id": "bf9b2176-df87-4b81-86af-02e0fdad0c86",
+				"method": "DELETE"
+			},
+			{
+				"id": "2376ec5e-f606-4b70-9648-7612b4767218",
+				"method": "PUT"
+			},
+			{
+				"id": "ea2d18f1-7573-4b2e-8c5b-acbc873958a2",
+				"method": "POST"
+			}
+		]
+	}
+}

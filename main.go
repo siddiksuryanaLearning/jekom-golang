@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-<<<<<<< HEAD
 	"jekom-golang/section4"
 	"jekom-golang/section4/2"
 	"jekom-golang/section4/3"
@@ -11,16 +10,6 @@ import (
 	"jekom-golang/section4/6"
 	"jekom-golang/section4/7"
 	"jekom-golang/section4/8"
-=======
-	"/section4/1.go"
-	"/section4/2.go"
-	"/section4/3.go"
-	"/section4/4.go"
-	"/section4/5.go"
-	"/section4/6.go"
-	"/section4/7.go"
-	"/section4/8.go"
->>>>>>> origin
 
 	"github.com/siddiksuryanaLearning/jekom-golang"
 )

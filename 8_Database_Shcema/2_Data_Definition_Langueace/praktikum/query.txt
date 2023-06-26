@@ -1,0 +1,88 @@
+//membuat database
+1. CREATE DATABASE alta_online_shop;
+
+//membuat table user
+2.1 CREATE TABLE users (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+//membuat table product
+2.2 CREATE TABLE products (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    product_type VARCHAR(255) NOT NULL,
+    operators VARCHAR(255) NOT NULL,
+    product_description TEXT,
+    payment_method VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+//membuat table transaksi
+2.3 CREATE TABLE transactions (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    transaction_detail TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+// membuat table kurir
+3. CREATE TABLE kurir (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+//membuat kolom ongkos_dasar
+4. ALTER TABLE kurir ADD ongkos_dasar DECIMAL(10, 2) DEFAULT 0.00 AFTER name;
+
+//merename table kurir menjadi shipping
+5. RENAME TABLE kurir TO shipping;
+
+//menghapus table shipping
+6. DROP TABLE shipping;
+
+//membuat relasi payment_method dengan product_description
+7.1 CREATE TABLE transactions (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  payment_method_id INT,
+  CONSTRAINT fk_transactions_payment_method
+    FOREIGN KEY (payment_method_id)
+    REFERENCES payment_methods(id)
+);
+
+CREATE TABLE products (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  transaction_id INT,
+  product_description VARCHAR(255),
+  CONSTRAINT fk_products_transaction
+    FOREIGN KEY (transaction_id)
+    REFERENCES transactions(id)
+);
+
+7.2 //ada kesalahan soal
+
+//membuat table prantara
+7.3 CREATE TABLE user_payment_method_details (
+  user_id INT,
+  product_id INT,
+  payment_method VARCHAR(255),
+  -- Tambahkan atribut-atribut lain yang diperlukan
+  CONSTRAINT pk_user_payment_method_details
+    PRIMARY KEY (user_id, product_id),
+  CONSTRAINT fk_user_payment_method_details_user
+    FOREIGN KEY (user_id)
+    REFERENCES users(id),
+  CONSTRAINT fk_user_payment_method_details_product
+    FOREIGN KEY (product_id)
+    REFERENCES products(id)
+);
+
+
+
